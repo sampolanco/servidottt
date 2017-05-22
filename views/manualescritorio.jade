@@ -1,0 +1,49 @@
+extends layout
+block content
+    body
+        #bodyManual
+            #contenedorMenu
+                nav(class="navbar navbar-default")
+                    #container-fluid
+                        #navbar-header
+                            button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1")
+                                span(class="sr-only") Menu
+                                span(class="icon-bar")
+                                span(class="icon-bar")
+                                span(class="icon-bar")
+                            a(href="#" class="navbar-brand") Manual de usuario
+                        div(class="collapse navbar-collapse" id="navbar1")
+                            ul(class="nav navbar-nav")
+                                li
+                                    a(href="http://localhost:3000/manual") Acerca de
+                                li
+                                    a(href="http://localhost:3000/manual/web") PestMap web
+                                li
+                                    a(href="http://localhost:3000/manual/escritorio") PestMap para escritorio
+                                li
+                                    a(href="http://localhost:3000/") Salir
+            #contenedorManual
+                br
+                h1 Manual para el sistema escritorio
+                .contenedorInfo
+                    h2 Ingreso al sistema
+                    p Para ingresar al sistema de escritorio. El primer paso es ingresar los datos del correo y contraseña con el que se realizó el registro, y posteriormente dar clic en "Entrar". De no tener un usuario registrado consultar el manual para el sistema web.
+                    .contenedorInfoImagen
+                        img(src="/images/escritorio1.jpg" height="235" width="204")
+                    h3 Modificar origen de datos
+                    p Dar clic en el la opcion "cambiar origen de datos" que aparece en la parte superior-derecha de la interfaz de navegacion. Posteriormente se abre un menu donde se puede elegir la carpeta de origen de los datos. Finalmente dar clic en la opcion "Aceptar" para guardar los cambios, o en la opcion "Cancelar" para mantener el mismo origen de datos.
+                    .contenedorInfoImagen
+                        img(src="/images/escritorio2.jpg" height="320" width="594")
+                    h3 Analisis de imagenes
+                    p Para realizar el analisis de imagenes, dar clic en el la opcion "comenzar analisis" que aparece en la parte superior de la interfaz de navegacion. Posteriormente se ejecuta el algoritmo que busca plagas en cada una de las imagenes que estan en la carpeta de origen. En la parte inferior de la interfaz se muestra una barra de carga, que indica el el porcentaje de imagenes analizadas. Finalmente los objetos considerados como mangos con antracnosis se muestran en la parte central de la interfaz.
+                    .contenedorInfoImagen
+                        img(src="/images/escritorio4.jpg" height="320" width="594")
+                    h3 Eliminar falsos resultados
+                    p Para eliminar los falsos resultados (imagenes en las que no se muestre plaga), dar clic en el la imagen que se desea descartar. Esto provocara que la imagen se borre de la inferfaz, junto con la informacion que le corresponde. 
+                    .contenedorInfoImagen
+                        img(src="/images/escritorio6.jpg" height="320" width="594")
+                    h3 Enviar resultados
+                    p Después de aplicar el analisis de las imágenes, se habilita la opción para enviar los resultados del analisis al servidor que guarda los puntos para poderlos visualizar a travez de internet. 
+                    .contenedorInfoImagen
+                        img(src="/images/escritorio7.jpg" height="320" width="594")
+                

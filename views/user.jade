@@ -1,0 +1,23 @@
+extends layout
+block content
+    body.bodyLogin
+        .centerDiv
+            .centerPaddingTop
+            #contenedorLogo
+            #contenedorRegistro
+                form(action="" method="post")
+                    .form-group
+                        label(for="exampleInputEmail1") Nombre del usuario
+                        input(type="text" class="form-control" value="#{user}" name='nombreNuevo')
+                    .form-group
+                        label(for="exampleInputPassword1") Antigua contraseña
+                        input(type="password" class="form-control" id="exampleInputPassword1" name='antiguoPassword')
+                    .form-group
+                        label(for="exampleInputPassword2") Nueva contraseña
+                        input(type="password" class="form-control" id="exampleInputPassword2" name='nuevoPassword')
+                    .form-group
+                        label(for="exampleInputPassword2") Confirmar nueva contraseña
+                        input(type="password" class="form-control" id="exampleInputPassword2" name='confirmarPassword')
+                    button(type="submit" class="btn btn-default" class="entrarBtn") Modificar
+                a(href="http://localhost:3000/map")
+                    button(type="submit" class="btn btn-default" class="botonVerde") Cancelar

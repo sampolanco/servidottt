@@ -1,0 +1,30 @@
+extends layout
+block content
+    body
+        //Div del mapa
+        #map
+        #contenedorBarra
+            #barraFlecha(class="panel-heading") Invitado
+            #barraExpandida(style='display:none;')
+                ul(class="nav nav-pills nav-stacked")
+                    li
+                        a(href="http://localhost:3000/")
+                            span(class="glyphicon glyphicon-log-out" aria-hidden="true")  Salir
+                    li
+                        a(href="#")
+                            label
+                                input(id="miCheckBox" type="checkbox" value="" checked)
+                                span(class="spanOcultar")  Puntos sanos
+                    li
+                        div(class="input-group" class="inputBuscar")
+                            input(id= "txtUsuario" type="text" class="form-control" placeholder="Buscar usuarios...")
+                            span(class="input-group-btn")
+                                button(id="btnBuscar" class="btn btn-default" type="button")
+                                    span(class="glyphicon glyphicon-search" aria-hidden="true")
+                ul(class="nav nav-pills nav-stacked")
+                     li(id="liUsuarios" class="colorBuscarUsuario")
+        script(src="/javascripts/jquery.js")
+        script(type='text/javascript').
+            var puntos=!{JSON.stringify(puntos)};;
+            var listaPoligonos=!{JSON.stringify(listaPoligonos)};;
+        script(src="/javascripts/mapaInvitadoScript.js")

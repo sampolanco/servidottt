@@ -1,0 +1,34 @@
+extends layout
+block content
+    body
+        #bodyManual
+            #contenedorMenu
+                nav(class="navbar navbar-default")
+                    #container-fluid
+                        #navbar-header
+                            button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1")
+                                span(class="sr-only") Menu
+                                span(class="icon-bar")
+                                span(class="icon-bar")
+                                span(class="icon-bar")
+                            a(href="#" class="navbar-brand") Manual de usuario
+                        div(class="collapse navbar-collapse" id="navbar1")
+                            ul(class="nav navbar-nav")
+                                li
+                                    a(href="http://localhost:3000/manual") Acerca de
+                                li
+                                    a(href="http://localhost:3000/manual/web") PestMap web
+                                li
+                                    a(href="http://localhost:3000/manual/escritorio") PestMap para escritorio
+                                li
+                                    a(href="http://localhost:3000/") Salir
+            #contenedorManual
+                br
+                h1 ACERCA DE
+                p Este sistema es el resultado de un proyecto de tesis de Ingenieria del 
+                    strong Instituto Politécnico Nacional
+                    |el cual presenta un sistema basado en procesamiento digital de imágenes para ayudar en la identificación de la plaga de la antracnosis del mango en cultivos agrícolas
+                br
+                .contenedorLogoIPN
+                br
+                .contenedorLogoUPIITA

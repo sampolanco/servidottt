@@ -1,0 +1,62 @@
+extends layout
+block content
+    body
+        #bodyManual
+            #contenedorMenu
+                nav(class="navbar navbar-default")
+                    #container-fluid
+                        #navbar-header
+                            button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1")
+                                span(class="sr-only") Menu
+                                span(class="icon-bar")
+                                span(class="icon-bar")
+                                span(class="icon-bar")
+                            a(href="#" class="navbar-brand") Manual de usuario
+                        div(class="collapse navbar-collapse" id="navbar1")
+                            ul(class="nav navbar-nav")
+                                li
+                                    a(href="http://localhost:3000/manual") Acerca de
+                                li
+                                    a(href="http://localhost:3000/manual/web") PestMap web
+                                li
+                                    a(href="http://localhost:3000/manual/escritorio") PestMap para escritorio
+                                li
+                                    a(href="http://localhost:3000/") Salir
+            #contenedorManual
+                br
+                h1 Manual para el sistema web
+                .contenedorInfo
+                    h2 Registro en el sistema
+                    p Usted puede crear un nuevo usuario de una manera facil. El primer paso es ir a la pagina de 
+                        a(href="http://localhost:3000/") inicio del sistema 
+                        | y posteriormente dar clic en 
+                        a(href="http://localhost:3000/registro") crea una aquí 
+                        | lo cual te llevara a la pagina de registro, donde es necesario llenar los datos que se muestran en el formulario.
+                    .contenedorInfoImagen
+                        img(src="/images/registro1.jpg" height="300" width="600")
+                    br
+                    h2 Ingreso al sistema
+                    p Para ingresar al sistema. El primer paso es ir a la pagina de 
+                        a(href="http://localhost:3000/") inicio del sistema  
+                        |,donde se deben ingresar los dados del correo y contraseña con el que se realizó el registro, y posteriormente dar clic en "Entrar".
+                    .contenedorInfoImagen
+                        img(src="/images/ingreso.jpg" height="250" width="250")
+                    h2 Navegacion por el mapa
+                    p Una vez validado el usuario se muestra un mapa con puntos y poligonos, donde cada punto representa a la informacion recabada al examinar una imagen de cultivos de mango. El color verde representa que no se encontro presencia de plaga en la imagen, mientras que el color rojo indica que en esa ubicacion es probable que exista la presencia de la plaga de la Antracnosis. Tambien se tiene una barra de navegacion, mediante la cual se pueden realizar las siguientes operaciones:
+                    .contenedorInfoImagen
+                        img(src="/images/navegacion1.jpg" height="165" width="675")
+                    h3 Modificar cuenta
+                    p Dar clic en el la opcion "modificar cuenta" que aparece en la barra de navegacion. Posteriormente se redirige a una nueva pagina donde se puede modficar el nombre de usuario y la contraseña. Finalmente dar clic en la opcion "Aceptar" para guardar los cambios, o en la opcion "Cancelar" para redirigirse al menu inicial.
+                    .contenedorInfoImagen
+                        img(src="/images/modificar.jpg" height="285" width="400")
+                    h3 Buscar usuario
+                    p Para buscar un usuario, se debe escribir su nombre en la caja de texto  "buscars usuarios" que aparece en la barra de navegacion. Posteriormente se escribe el nombre de usuario y se da clic en la imagen de la lupa que aparece del lado derecho de la caja de texto. Despues de esto aparecerá una lista de usuarios, cuyo nombre coincide nombre del usuario escrito Finalmente dar clic en uno de los usuarios para poder ver su informacion recabada.
+                    .contenedorInfoImagen
+                        img(src="/images/buscarUsuario1.jpg" height="250" width="250")
+                    br
+                    .contenedorInfoImagen
+                        img(src="/images/buscarUsuario2.jpg" height="165" width="675")
+                    h3 Puntos sanos
+                    p Esta opcion permite ocultar la informacion perteneciente a los puntos donde no se encontro la presencia de plaga. Para esto se debe dar clic sobre el campo "puntos sanos" de la barra de navegacion.
+                    .contenedorInfoImagen
+                        img(src="/images/puntosSanos.jpg" height="165" width="675")

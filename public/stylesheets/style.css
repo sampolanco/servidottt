@@ -1,0 +1,163 @@
+body{
+    margin:  0;
+    padding: 0;
+    background-color: #E8E8E8;/*Gris fondo*/
+}
+#map{
+    width: 100%;
+    /*position: relative;*/
+    top: 0;
+    bottom: 0;
+    height: 700px
+}
+/*---------------------------------------------Login*/
+.bodyLogin{
+    background-image: url("/images/Agricultura.jpg");
+}
+.centerDiv {
+    margin: auto;
+    width: 400px;
+}
+.centerPaddingTop{
+    padding-top: 10%;
+}
+#contenedorLogo{
+    background-color: #E8E8E8;/*Gris fondo*/
+    background-image: url("/images/LogoPestMap.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 130px;
+}
+#contenedorLogin{
+    background-color: #E8E8E8;/*Gris fondo*/
+    height: 320px;
+    padding: 10px
+}
+.botonVerde{
+    margin-top: 20px;
+    background-color: #82EEA8 !important;/*Verde fondo*/
+    width: 100%;
+}
+.entrarBtn{
+    width: 100%;
+}
+.crearCuenta{
+    text-align: center;
+    margin-top: 10px;
+}
+/*---------------------Registro*/
+#contenedorRegistro{
+    background-color: #E8E8E8;/*Gris fondo*/
+    padding: 10px
+}
+/*--------------------------------------------------Map*/
+.ocultar{
+    display: none;
+}
+#contenedorBarra{
+    background-color: #E8E8E8;
+    /*color: #A0A0A0;
+    background-color: #282828;
+    font-weight: normal;
+    height: 700px;*/
+    margin:5px;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    -webkit-box-shadow: -9px 9px 20px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 9px 20px -2px rgba(0,0,0,0.75);
+    box-shadow: -9px 9px 20px -2px rgba(0,0,0,0.75);
+}
+#barraFlecha{
+    background-color: #82EEA8;
+    text-align: center;
+}
+#barraFlecha:hover
+{
+    color: #FFFFFF;
+}
+#buscar{
+    width:80%;
+}
+.checkboxOcultar{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin: 0 !important;
+}
+.spanOcultar{
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    color: #337ab7;
+}
+.inputBuscar{
+    padding-right: 1px;
+    padding-left: 1px;
+}
+.colorBuscarUsuario{
+   background-color: #fff;
+}
+.marginn0{
+  margin:  0;
+}
+.padding0{
+   padding: 0;
+}
+/*--------------------------------------------------Menu*/
+#bodyManual{
+    background-color: #E8E8E8;
+
+    /*top: 0;
+    right: 0;*/
+}
+#contenedorMenu{
+    height: 10%;
+}
+
+#contenedorManual{
+    background-color: #ffffff;
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    /*height: 300px;
+    /*top: 0;
+    right: 0;*/
+}
+.contenedorLogoIPN{
+    background-image: url("/images/LogoIPN.png");
+    background-size: 187px 270px;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 187px;
+    height: 270px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contenedorLogoUPIITA{
+    background-image: url("/images/LogoUPIITA.png");
+    background-size: 220px 200px;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 220px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contenedorInfo{
+    text-align: left;
+    margin: 2%;
+}
+.contenedorInfoImagen{
+    /*background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;*/
+    text-align: center;
+}
